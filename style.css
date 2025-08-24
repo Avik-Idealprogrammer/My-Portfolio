@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+html,
+body {
+  overflow-x: hidden;
+}
 
 /* For WebKit browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
@@ -9,6 +13,9 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
 }
+
+/* scrolling end */
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +28,8 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
+
+/* now page one */
 
 header {
   position: absolute;
@@ -71,6 +80,8 @@ header {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* .................page one end.......... */
+
 /* .................about vala.................... */
 
 #about {
@@ -119,55 +130,27 @@ header {
 }
 
 .about-image img {
-  max-width: 100%;
-  height: 80%;
+  max-width: 70%;
+  height: 600%;
   border-radius: 700px; /* Optional: makes it look modern */
 }
 
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff; /* Change this to your desired color */
-  color: #fff;
+  background-color: #f9f9f9; /* Change this to your desired color */
+  color: #359381;
   text-decoration: none;
   border-radius: 5px;
+  font-weight: 600;
   transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #0056b3; /* Slightly darker shade for hover */
+  background-color: #9c9a9a; /* Slightly darker shade for hover */
 }
 
-
-/* Mobile friendly */
-@media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .about-text h3 {
-    font-size: 1.5rem;
-  }
-}
-
-/* #text h2 {
-  position: absolute;
-  font-size: 4em;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-#text p{
-  position: absolute;
-  font-size: 2.5em;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-#text a {
-  position: absolute;
-  font-size: 2em;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-} */
+/* ............home section........... */
 
 .parallax img {
   position: absolute;
@@ -226,11 +209,13 @@ header {
   overflow: hidden;
   padding: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
+  height: 500px;
+
 }
 
 .project-card img {
   width: 100%;
-  height: 150px;
+  height: 250px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -263,13 +248,15 @@ header {
 }
 /* .........................end.................................. */
 
-/* For Mobile Phone */
+/* For Mobile Phone............................................................................................. */
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
+    font-size: 14px;
   }
   html {
-    font-size: 16px; /* slightly smaller for phones */
+    font-size: 14px; /* slightly smaller for phones */
+    scroll-behavior: smooth;
   }
 
   .logo {
@@ -280,6 +267,28 @@ header {
   .navigation a {
     padding: 6px 10px;
     margin: 0 5px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d5ddd7; /* Change this to your desired color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #082e23; /* Slightly darker shade for hover */
+  }
+
+  .about-image img {
+    max-width: 50%;
+    height: 500%;
+    border-radius: 700px; /* Optional: makes it look modern */
+    object-fit: cover;
+    padding: 20px;
   }
 
   #text {
@@ -296,9 +305,11 @@ header {
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
+    font-size: 14px;
   }
   html {
-    font-size: 16px; /* slightly smaller base font for phones */
+    font-size: 14px; /* slightly smaller base font for phones */
+    scroll-behavior: smooth;
   }
 
   header {
@@ -312,6 +323,19 @@ header {
     font-size: 2em;
     margin: 0 0 10px 0;
   }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d5ddd7; /* Change this to your desired color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #082e23; /* Slightly darker shade for hover */
+  }
 
   .navigation {
     display: flex;
@@ -322,6 +346,13 @@ header {
     padding: 8px 12px;
     margin: 5px 5px;
     font-size: 0.9rem;
+  }
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text h3 {
+    font-size: 1.5rem;
   }
 
   .parallax {
@@ -349,13 +380,28 @@ header {
 @media (max-width: 1024px) and (min-width: 769px) {
   body {
     overflow-x: hidden;
+    font-size: 16px;
   }
   html {
     font-size: 17px;
+    scroll-behavior: smooth;
   }
 
   header {
     padding: 25px 60px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d5ddd7; /* Change this to your desired color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #082e23; /* Slightly darker shade for hover */
   }
 
   .logo {
